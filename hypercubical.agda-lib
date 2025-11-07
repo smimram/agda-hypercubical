@@ -1,0 +1,4 @@
+name: hypercubical
+include: .
+depend: cubical
+flags: --cubical --guardedness
