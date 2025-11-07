@@ -1,2 +1,2 @@
 all:
-	agda --build-library
+	agda Tesseract.agda

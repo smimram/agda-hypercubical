@@ -7,7 +7,9 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
     - name: Install packages
-      run: sudo apt-get -y install agda
+      run: |
+        sudo apt-get purge -y man-db
+        sudo apt-get -y install agda
     - name: Download cubical library
       run: |
         git clone https://github.com/agda/cubical.git -b v0.5
